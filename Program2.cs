@@ -12,6 +12,7 @@ namespace Soldiers
         {
             Database database = new Database();
             string firstLetter = "Б";
+            
             Console.WriteLine("До перевода солдат:");
             database.ShowByNameDetachment1();
             database.ShowByNameDetachment2();
@@ -26,6 +27,7 @@ namespace Soldiers
     {
         private List<Soldier> _detachment1 = new List<Soldier>();
         private List<Soldier> _detachment2 = new List<Soldier>();
+        
         public Database()
         {
             _detachment1.Add(new Soldier("Гончаров Даниил", "рядовой"));
